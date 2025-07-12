@@ -30,7 +30,7 @@ export default function Header() {
               <Leaf className="h-8 w-8 text-white" />
             </div>
             <div>
-              <span className="text-2xl font-bold text-gray-900">FreshGlobal</span>
+              <span className="text-2xl font-bold text-gray-900">Rareimpex</span>
               <p className="text-sm text-gray-600 -mt-1">Premium Fruits Worldwide</p>
             </div>
           </Link>

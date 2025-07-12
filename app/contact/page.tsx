@@ -151,7 +151,7 @@ export default function Contact() {
                     <div>
                       <h3 className="text-lg font-semibold text-gray-900 mb-1">Head Office</h3>
                       <p className="text-gray-600 leading-relaxed">
-                        FreshGlobal Import Export Pvt. Ltd.<br />
+                        Rareimpex Import Export Pvt. Ltd.<br />
                         15th Floor, Trade Center Building<br />
                         Bandra Kurla Complex, Bandra East<br />
                         Mumbai, Maharashtra 400051<br />
@@ -180,7 +180,7 @@ export default function Contact() {
                     <Mail className="h-6 w-6 text-blue-600 mr-4 flex-shrink-0" />
                     <div>
                       <h3 className="text-lg font-semibold text-gray-900 mb-1">Email</h3>
-                      <p className="text-gray-600">info@freshglobal.com</p>
+                      <p className="text-gray-600">info@rareimpex.com</p>
                     </div>
                   </div>
 
@@ -241,7 +241,7 @@ export default function Contact() {
             <div className="relative h-96 bg-gradient-to-r from-blue-100 to-green-100 flex items-center justify-center">
               <div className="text-center">
                 <MapPin className="h-16 w-16 text-blue-600 mx-auto mb-4" />
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">FreshGlobal Head Office</h3>
+                <h3 className="text-xl font-semibold text-gray-900 mb-2">Rareimpex Head Office</h3>
                 <p className="text-gray-600 max-w-md">
                   Bandra Kurla Complex, Mumbai<br />
                   Click to view on Google Maps

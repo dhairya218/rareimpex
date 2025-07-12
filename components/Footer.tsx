@@ -14,7 +14,7 @@ export default function Footer() {
                 <Leaf className="h-6 w-6 text-white" />
               </div>
               <div>
-                <span className="text-xl font-bold">FreshGlobal</span>
+                <span className="text-xl font-bold">Rareimpex</span>
                 <p className="text-sm text-gray-400 -mt-1">Premium Fruits Worldwide</p>
               </div>
             </div>
@@ -108,7 +108,7 @@ export default function Footer() {
               </div>
               <div className="flex items-center">
                 <Mail className="h-5 w-5 text-green-400 mr-3 flex-shrink-0" />
-                <span className="text-gray-400 text-sm">info@freshglobal.com</span>
+                <span className="text-gray-400 text-sm">info@rareimpex.com</span>
               </div>
             </div>
           </div>
@@ -118,7 +118,7 @@ export default function Footer() {
         <div className="border-t border-gray-800 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 text-sm">
-              © 2024 FreshGlobal Import Export Pvt. Ltd. All rights reserved.
+              © 2024 Rareimpex Import Export Pvt. Ltd. All rights reserved.
             </p>
             <div className="flex space-x-6 mt-4 md:mt-0">
               <a href="#" className="text-gray-400 hover:text-green-400 text-sm transition-colors duration-300">

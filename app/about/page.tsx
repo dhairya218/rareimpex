@@ -31,7 +31,7 @@ export default function About() {
       <div className="relative bg-gradient-to-r from-green-600 to-green-700 text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6">About FreshGlobal</h1>
+            <h1 className="text-4xl md:text-6xl font-bold mb-6">About Rareimpex</h1>
             <p className="text-xl md:text-2xl max-w-3xl mx-auto">
               Leading the global fruit trade with excellence, integrity, and innovation for over two decades.
             </p>
@@ -46,7 +46,7 @@ export default function About() {
             <div>
               <h2 className="text-3xl font-bold text-gray-900 mb-6">Our Story</h2>
               <p className="text-lg text-gray-700 mb-6">
-                Founded in 2001, FreshGlobal began as a small family business with a vision to bring the world's finest fruits to global markets. Starting from our headquarters in Mumbai, we've grown into one of the leading fruit import-export companies in Asia.
+                Founded in 2001, Rareimpex began as a small family business with a vision to bring the world's finest fruits to global markets. Starting from our headquarters in Mumbai, we've grown into one of the leading fruit import-export companies in Asia.
               </p>
               <p className="text-lg text-gray-700 mb-6">
                 Today, we operate across 7 countries, working directly with farmers and distributors to ensure a seamless supply chain. Our expertise spans premium apples, tropical mangoes, quality bananas, and exotic citrus fruits.

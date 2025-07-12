@@ -7,7 +7,7 @@ import Footer from '@/components/Footer';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'FreshGlobal - Premium Fruit Import Export',
+  title: 'Rareimpex - Premium Fruit Import Export',
   description: 'Leading fruit import-export business operating across 7+ countries, specializing in premium quality apples, bananas, mangoes and more.',
 };
 
