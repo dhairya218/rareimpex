@@ -3,16 +3,32 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { Menu, X, Leaf } from 'lucide-react';
+import { Menu, X, Leaf, ChevronDown } from 'lucide-react';
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
+  const [isProductsOpen, setIsProductsOpen] = useState(false);
   const pathname = usePathname();
 
   const navigation = [
     { name: 'Home', href: '/' },
     { name: 'About Us', href: '/about' },
-    { name: 'Products', href: '/products' },
+    { 
+      name: 'Products', 
+      href: '/products',
+      hasDropdown: true,
+      dropdownItems: [
+        { name: 'Apples', href: '/products#apples' },
+        { name: 'Pears', href: '/products#pears' },
+        { name: 'Citrus', href: '/products#citrus' },
+        { name: 'Kiwi', href: '/products#kiwi' },
+        { name: 'Grapes', href: '/products#grapes' },
+        { name: 'Avocado', href: '/products#avocado' },
+        { name: 'Dragon Fruit', href: '/products#dragon-fruit' },
+        { name: 'Stone Fruit', href: '/products#stone-fruit' },
+        { name: 'Berries', href: '/products#berries' },
+      ]
+    },
     { name: 'Contact Us', href: '/contact' },
   ];
 
@@ -26,11 +42,11 @@ export default function Header() {
         <div className="flex justify-between items-center py-4">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2">
-            <div className="bg-green-600 p-2 rounded-lg">
+            <div className="bg-rareimpex-green p-2 rounded-lg">
               <Leaf className="h-8 w-8 text-white" />
             </div>
             <div>
-              <span className="text-2xl font-bold text-gray-900">Rareimpex</span>
+              <span className="text-2xl font-bold text-rareimpex-red">Rareimpex</span>
               <p className="text-sm text-gray-600 -mt-1">Premium Fruits Worldwide</p>
             </div>
           </Link>
@@ -38,20 +54,58 @@ export default function Header() {
           {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-8">
             {navigation.map((item) => (
-              <Link
-                key={item.name}
-                href={item.href}
-                className={`text-lg font-medium transition-colors duration-300 relative ${
-                  isActive(item.href)
-                    ? 'text-green-600'
-                    : 'text-gray-700 hover:text-green-600'
-                }`}
-              >
-                {item.name}
-                {isActive(item.href) && (
-                  <span className="absolute -bottom-1 left-0 w-full h-0.5 bg-green-600 rounded-full"></span>
+              <div key={item.name} className="relative">
+                {item.hasDropdown ? (
+                  <div
+                    className="relative"
+                    onMouseEnter={() => setIsProductsOpen(true)}
+                    onMouseLeave={() => setIsProductsOpen(false)}
+                  >
+                    <button
+                      className={`flex items-center text-lg font-medium transition-colors duration-300 relative ${
+                        isActive(item.href)
+                          ? 'text-rareimpex-red'
+                          : 'text-gray-700 hover:text-rareimpex-red'
+                      }`}
+                    >
+                      {item.name}
+                      <ChevronDown className="h-4 w-4 ml-1" />
+                      {isActive(item.href) && (
+                        <span className="absolute -bottom-1 left-0 w-full h-0.5 bg-rareimpex-red rounded-full"></span>
+                      )}
+                    </button>
+                    
+                    {/* Dropdown Menu */}
+                    {isProductsOpen && (
+                      <div className="absolute top-full left-0 mt-2 w-64 bg-white rounded-lg shadow-lg border border-gray-200 py-2 z-50">
+                        {item.dropdownItems?.map((dropdownItem) => (
+                          <Link
+                            key={dropdownItem.name}
+                            href={dropdownItem.href}
+                            className="block px-4 py-2 text-gray-700 hover:bg-rareimpex-red hover:text-white transition-colors duration-200"
+                          >
+                            {dropdownItem.name}
+                          </Link>
+                        ))}
+                      </div>
+                    )}
+                  </div>
+                ) : (
+                  <Link
+                    href={item.href}
+                    className={`text-lg font-medium transition-colors duration-300 relative ${
+                      isActive(item.href)
+                        ? 'text-rareimpex-red'
+                        : 'text-gray-700 hover:text-rareimpex-red'
+                    }`}
+                  >
+                    {item.name}
+                    {isActive(item.href) && (
+                      <span className="absolute -bottom-1 left-0 w-full h-0.5 bg-rareimpex-red rounded-full"></span>
+                    )}
+                  </Link>
                 )}
-              </Link>
+              </div>
             ))}
           </nav>
 
@@ -59,7 +113,7 @@ export default function Header() {
           <div className="md:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-green-600 hover:bg-gray-100 transition-colors duration-300"
+              className="inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-rareimpex-red hover:bg-gray-100 transition-colors duration-300"
             >
               {isOpen ? (
                 <X className="block h-6 w-6" />
@@ -75,18 +129,48 @@ export default function Header() {
           <div className="md:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1 border-t border-gray-200">
               {navigation.map((item) => (
-                <Link
-                  key={item.name}
-                  href={item.href}
-                  className={`block px-3 py-2 rounded-md text-base font-medium transition-colors duration-300 ${
-                    isActive(item.href)
-                      ? 'text-green-600 bg-green-50'
-                      : 'text-gray-700 hover:text-green-600 hover:bg-gray-100'
-                  }`}
-                  onClick={() => setIsOpen(false)}
-                >
-                  {item.name}
-                </Link>
+                <div key={item.name}>
+                  {item.hasDropdown ? (
+                    <div>
+                      <button
+                        onClick={() => setIsProductsOpen(!isProductsOpen)}
+                        className={`w-full text-left px-3 py-2 rounded-md text-base font-medium transition-colors duration-300 ${
+                          isActive(item.href)
+                            ? 'text-rareimpex-red bg-red-50'
+                            : 'text-gray-700 hover:text-rareimpex-red hover:bg-gray-100'
+                        }`}
+                      >
+                        {item.name}
+                      </button>
+                      {isProductsOpen && (
+                        <div className="pl-4 space-y-1">
+                          {item.dropdownItems?.map((dropdownItem) => (
+                            <Link
+                              key={dropdownItem.name}
+                              href={dropdownItem.href}
+                              className="block px-3 py-2 text-sm text-gray-600 hover:text-rareimpex-red hover:bg-gray-50 rounded-md"
+                              onClick={() => setIsOpen(false)}
+                            >
+                              {dropdownItem.name}
+                            </Link>
+                          ))}
+                        </div>
+                      )}
+                    </div>
+                  ) : (
+                    <Link
+                      href={item.href}
+                      className={`block px-3 py-2 rounded-md text-base font-medium transition-colors duration-300 ${
+                        isActive(item.href)
+                          ? 'text-rareimpex-red bg-red-50'
+                          : 'text-gray-700 hover:text-rareimpex-red hover:bg-gray-100'
+                      }`}
+                      onClick={() => setIsOpen(false)}
+                    >
+                      {item.name}
+                    </Link>
+                  )}
+                </div>
               ))}
             </div>
           </div>
