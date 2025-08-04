@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
-import { ArrowRight, Apple, Grape, Citrus, Kiwi, Avocado, Dragon, Cherry, Pear } from 'lucide-react';
+import { ArrowRight, Apple, Grape, Citrus, Cherry } from 'lucide-react';
 
 const productData = {
   apples: {
@@ -22,7 +22,7 @@ const productData = {
   },
   pears: {
     name: "Pears",
-    icon: Pear,
+    icon: Apple, // Using Apple icon as placeholder since Pear doesn't exist
     description: "Fresh and juicy pears from premium orchards",
     image: "https://images.pexels.com/photos/102104/pexels-photo-102104.jpeg",
     varieties: [
@@ -49,7 +49,7 @@ const productData = {
   },
   kiwi: {
     name: "Kiwi",
-    icon: Kiwi,
+    icon: Apple, // Using Apple icon as placeholder since Kiwi doesn't exist
     description: "Exotic kiwi fruits with unique flavor and high nutritional value",
     image: "https://images.pexels.com/photos/102104/pexels-photo-102104.jpeg",
     varieties: [
@@ -71,7 +71,7 @@ const productData = {
   },
   avocado: {
     name: "Avocado",
-    icon: Avocado,
+    icon: Apple, // Using Apple icon as placeholder since Avocado doesn't exist
     description: "Premium Hass avocados with rich, creamy texture",
     image: "https://images.pexels.com/photos/102104/pexels-photo-102104.jpeg",
     varieties: [
@@ -80,7 +80,7 @@ const productData = {
   },
   dragonFruit: {
     name: "Dragon Fruit",
-    icon: Dragon,
+    icon: Cherry, // Using Cherry icon as placeholder since Dragon doesn't exist
     description: "Exotic dragon fruits with vibrant colors and unique taste",
     image: "https://images.pexels.com/photos/102104/pexels-photo-102104.jpeg",
     varieties: [

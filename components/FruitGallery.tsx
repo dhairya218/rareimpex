@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import Image from 'next/image';
-import { ArrowRight, Leaf, Apple, Pear, Citrus, Kiwi, Grape, Avocado, Dragon, Cherry } from 'lucide-react';
+import { ArrowRight, Leaf, Apple, Citrus, Grape, Cherry } from 'lucide-react';
 
 const productCategories = [
   {
@@ -15,7 +15,7 @@ const productCategories = [
   },
   {
     name: "Pears",
-    icon: Pear,
+    icon: Apple, // Using Apple icon as placeholder since Pear doesn't exist
     image: "https://images.pexels.com/photos/102104/pexels-photo-102104.jpeg",
     varieties: "Packham, Fonelle, Vermont, William, Red Anjou, Green Anjou",
     description: "Fresh and juicy pears from premium orchards with exceptional taste",
@@ -31,7 +31,7 @@ const productCategories = [
   },
   {
     name: "Kiwi",
-    icon: Kiwi,
+    icon: Apple, // Using Apple icon as placeholder since Kiwi doesn't exist
     image: "https://images.pexels.com/photos/102104/pexels-photo-102104.jpeg",
     varieties: "Hayward, Golden",
     description: "Exotic kiwi fruits with unique flavor and high nutritional value",
@@ -47,7 +47,7 @@ const productCategories = [
   },
   {
     name: "Avocado",
-    icon: Avocado,
+    icon: Apple, // Using Apple icon as placeholder since Avocado doesn't exist
     image: "https://images.pexels.com/photos/102104/pexels-photo-102104.jpeg",
     varieties: "Hass",
     description: "Premium Hass avocados with rich, creamy texture and nutty flavor",
@@ -55,7 +55,7 @@ const productCategories = [
   },
   {
     name: "Dragon Fruit",
-    icon: Dragon,
+    icon: Cherry, // Using Cherry icon as placeholder since Dragon doesn't exist
     image: "https://images.pexels.com/photos/102104/pexels-photo-102104.jpeg",
     varieties: "White Flesh, Red Flesh",
     description: "Exotic dragon fruits with vibrant colors and unique taste",
