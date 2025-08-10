@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import { ArrowRight, Apple, Grape, Citrus, Cherry, Sparkles } from 'lucide-react';
+import ProductModal from '@/components/ProductModal';
 
 const productData = {
   apples: {
@@ -143,6 +144,8 @@ const productData = {
 export default function Products() {
   const [selectedCategory, setSelectedCategory] = useState<string>('apples');
   const [activeSection, setActiveSection] = useState<string>('apples');
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [selectedProduct, setSelectedProduct] = useState<any>(null);
 
   // Function to map category names to productData keys
   const getCategoryKey = (categoryName: string) => {
@@ -176,6 +179,17 @@ export default function Products() {
     window.addEventListener('hashchange', handleHashChange);
     return () => window.removeEventListener('hashchange', handleHashChange);
   }, []);
+
+  const handleProductClick = (variety: any) => {
+    setSelectedProduct({
+      name: productData[selectedCategory as keyof typeof productData].name,
+      variety: variety,
+      category: productData[selectedCategory as keyof typeof productData].name,
+      accentColor: productData[selectedCategory as keyof typeof productData].accentColor,
+      bgColor: productData[selectedCategory as keyof typeof productData].bgColor
+    });
+    setIsModalOpen(true);
+  };
 
   return (
     <div className="bg-gradient-to-br from-blue-50 via-white to-green-50">
@@ -305,7 +319,11 @@ export default function Products() {
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
             {productData[selectedCategory as keyof typeof productData].varieties.map((variety, index) => (
-              <div key={index} className="bg-white rounded-3xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-300 border border-gray-100 group">
+              <div 
+                key={index} 
+                className="bg-white rounded-3xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-300 border border-gray-100 group cursor-pointer"
+                onClick={() => handleProductClick(variety)}
+              >
                 <div className="relative h-64 overflow-hidden">
                   {/* Display variety image if available, otherwise show icon */}
                   {(variety as any).image ? (
@@ -339,7 +357,11 @@ export default function Products() {
                 </div>
                 <div className="p-6">
                   <h3 className="text-xl font-semibold text-gray-900 mb-3">{variety.name}</h3>
-                  <p className="text-gray-600 text-sm leading-relaxed">{variety.description}</p>
+                  <p className="text-gray-600 text-sm leading-relaxed mb-4">{variety.description}</p>
+                  <div className="flex items-center text-rareimpex-red font-medium text-sm group-hover:text-rareimpex-green transition-colors duration-300">
+                    <span>Click to view details</span>
+                    <ArrowRight className="h-4 w-4 ml-2 group-hover:translate-x-1 transition-transform duration-300" />
+                  </div>
                 </div>
               </div>
             ))}
@@ -367,6 +389,18 @@ export default function Products() {
           </div>
         </div>
       </div>
+
+      {/* Product Modal */}
+      {selectedProduct && (
+        <ProductModal
+          isOpen={isModalOpen}
+          onClose={() => {
+            setIsModalOpen(false);
+            setSelectedProduct(null);
+          }}
+          product={selectedProduct}
+        />
+      )}
     </div>
   );
 }
