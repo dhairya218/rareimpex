@@ -3,7 +3,8 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { Menu, X, Leaf, ChevronDown } from 'lucide-react';
+import { Menu, X, ChevronDown } from 'lucide-react';
+import Image from 'next/image';
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -41,9 +42,15 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
           {/* Logo */}
-          <Link href="/" className="flex items-center space-x-2">
-            <div className="bg-rareimpex-green p-2 rounded-lg">
-              <Leaf className="h-8 w-8 text-white" />
+          <Link href="/" className="flex items-center space-x-3">
+            <div className="relative w-12 h-12">
+              <Image
+                src="/logo.png"
+                alt="Rareimpex Logo"
+                fill
+                className="object-contain"
+                priority
+              />
             </div>
             <div>
               <span className="text-2xl font-bold text-rareimpex-red">Rareimpex</span>

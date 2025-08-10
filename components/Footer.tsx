@@ -1,5 +1,6 @@
 import Link from 'next/link';
-import { Leaf, Phone, Mail, MapPin, MessageCircle } from 'lucide-react';
+import { Phone, Mail, MapPin, MessageCircle } from 'lucide-react';
+import Image from 'next/image';
 
 export default function Footer() {
   return (
@@ -9,9 +10,14 @@ export default function Footer() {
           
           {/* Company Info */}
           <div>
-            <div className="flex items-center space-x-2 mb-6">
-              <div className="bg-rareimpex-green p-2 rounded-lg">
-                <Leaf className="h-6 w-6 text-white" />
+            <div className="flex items-center space-x-3 mb-6">
+              <div className="relative w-10 h-10">
+                <Image
+                  src="/logo.png"
+                  alt="Rareimpex Logo"
+                  fill
+                  className="object-contain"
+                />
               </div>
               <div>
                 <span className="text-xl font-bold text-rareimpex-red">Rareimpex</span>
