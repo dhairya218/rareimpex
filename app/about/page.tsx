@@ -58,38 +58,63 @@ export default function About() {
       <div className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Mission & Vision</h2>
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">Vision & Mission</h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
               Driving the future of global fruit trade with purpose and innovation
             </p>
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-            {/* Mission */}
-            <div className="bg-gradient-to-br from-green-50 to-emerald-50 rounded-2xl p-8 border border-green-100">
-              <div className="flex items-center mb-6">
-                <Target className="h-10 w-10 text-green-600 mr-4" />
-                <h3 className="text-2xl font-bold text-gray-900">Our Mission</h3>
-              </div>
-              <p className="text-lg text-gray-700 mb-4">
-                To bridge the gap between premium fruit producers and global markets, ensuring the highest quality standards while promoting sustainable agricultural practices and fair trade principles.
-              </p>
-              <p className="text-gray-600">
-                We strive to be the most trusted partner in the international fruit trade, delivering exceptional value to our customers, suppliers, and stakeholders.
-              </p>
-            </div>
-            
             {/* Vision */}
             <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl p-8 border border-blue-100">
               <div className="flex items-center mb-6">
                 <Eye className="h-10 w-10 text-blue-600 mr-4" />
-                <h3 className="text-2xl font-bold text-gray-900">Our Vision</h3>
+                <h3 className="text-2xl font-bold text-gray-900">Vision</h3>
               </div>
               <p className="text-lg text-gray-700 mb-4">
-                To become the global leader in premium fruit distribution, setting industry standards for quality, sustainability, and innovation in agricultural trade.
+                To be the most trusted and recognized global leader in the fresh fruit trade, celebrated for our unwavering commitment to quality, integrity, and customer delight.
+              </p>
+              <p className="text-gray-700 mb-4">
+                We strive to bridge the gap between the world's finest growers and Indian consumers, delivering premium imported fruits that blend exceptional taste, unmatched freshness, and fair pricing.
               </p>
               <p className="text-gray-600">
-                We envision a world where the finest fruits from every corner of the globe are accessible to consumers worldwide, while supporting local farming communities and environmental conservation.
+                Our vision is to set new benchmarks in the industry by promoting healthy lifestyles, fostering sustainable trade practices, and ensuring that every fruit tells a story of excellence.
               </p>
+            </div>
+            
+            {/* Mission */}
+            <div className="bg-gradient-to-br from-green-50 to-emerald-50 rounded-2xl p-8 border border-green-100">
+              <div className="flex items-center mb-6">
+                <Target className="h-10 w-10 text-green-600 mr-4" />
+                <h3 className="text-2xl font-bold text-gray-900">Mission</h3>
+              </div>
+              <p className="text-lg text-gray-700 mb-6">
+                Our mission is to redefine the fruit import industry through innovation, efficiency, and sustainability — making premium global produce accessible to every corner of India.
+              </p>
+              <div className="space-y-3">
+                <p className="text-gray-700 font-semibold">We are committed to:</p>
+                <ul className="space-y-2 text-gray-600">
+                  <li className="flex items-start">
+                    <span className="text-green-600 mr-2">•</span>
+                    Building enduring partnerships with leading international growers and suppliers to ensure a year-round supply of world-class fruits.
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-green-600 mr-2">•</span>
+                    Delivering uncompromising freshness through advanced logistics, cold chain management, and stringent quality control.
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-green-600 mr-2">•</span>
+                    Offering competitive pricing without compromising on product standards, ensuring value for both customers and partners.
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-green-600 mr-2">•</span>
+                    Promoting sustainability by supporting eco-friendly sourcing, packaging, and transportation methods.
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-green-600 mr-2">•</span>
+                    Enriching consumer experience with seamless service, transparent operations, and a passion for excellence in every shipment.
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
@@ -225,53 +250,7 @@ export default function About() {
         </div>
       </div>
 
-      {/* Team Section */}
-      <div className="py-16 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Our Expertise</h2>
-            <p className="text-lg text-gray-600">Backed by decades of experience in international fruit trading</p>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="text-center">
-              <div className="relative h-64 w-full mb-6 rounded-lg overflow-hidden">
-                <Image
-                  src="https://images.pexels.com/photos/1458686/pexels-photo-1458686.jpeg"
-                  alt="Farm operations"
-                  fill
-                  className="object-cover"
-                />
-              </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">Farm Partnerships</h3>
-              <p className="text-gray-600">Direct relationships with premium fruit growers worldwide</p>
-            </div>
-            <div className="text-center">
-              <div className="relative h-64 w-full mb-6 rounded-lg overflow-hidden">
-                <Image
-                  src="https://images.pexels.com/photos/1267308/pexels-photo-1267308.jpeg"
-                  alt="Quality control"
-                  fill
-                  className="object-cover"
-                />
-              </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">Quality Assurance</h3>
-              <p className="text-gray-600">Rigorous testing and quality control at every stage</p>
-            </div>
-            <div className="text-center">
-              <div className="relative h-64 w-full mb-6 rounded-lg overflow-hidden">
-                <Image
-                  src="https://images.pexels.com/photos/1267324/pexels-photo-1267324.jpeg"
-                  alt="Logistics operations"
-                  fill
-                  className="object-cover"
-                />
-              </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">Global Logistics</h3>
-              <p className="text-gray-600">Advanced cold chain and distribution networks</p>
-            </div>
-          </div>
-        </div>
-      </div>
+
 
 
     </div>
