@@ -12,6 +12,7 @@ const productData = {
     description: "Premium quality apples sourced from the finest orchards worldwide",
     image: "/products/apples/category.jpg",
     heroImage: "/products/apples/hero.jpg",
+    backgroundImage: "/images/backgrounds/apple.jpg",
     bgColor: "bg-gradient-to-br from-red-500 to-red-600",
     accentColor: "text-red-500",
     varieties: [
@@ -19,9 +20,8 @@ const productData = {
       { name: "Red Delicious", description: "Classic red apple with sweet flavor and distinctive shape", image: "/products/apples/varieties/red-delicious.jpg" },
       { name: "Pink Lady", description: "Sweet-tart flavor with beautiful pink-red coloring", image: "/products/apples/varieties/pink-lady.jpg" },
       { name: "Fuji", description: "Sweet, crisp, and juicy with excellent shelf life", image: "/products/apples/varieties/fuji.jpg" },
-      { name: "Queen", description: "Premium variety with exceptional taste and texture", image: "/products/apples/varieties/queen.jpg" },
-      { name: "Granny Smith", description: "Tart, crisp green apples perfect for baking", image: "/products/apples/varieties/granny-smith.jpg" },
-      { name: "Cripps Pink", description: "Sweet and aromatic with pink-red skin", image: "/products/apples/varieties/cripps-pink.jpg" }
+              { name: "Queen", description: "Premium variety with exceptional taste and texture", image: "/products/apples/varieties/queen.jpg" },
+      { name: "Granny Smith", description: "Tart, crisp green apples perfect for baking", image: "/products/apples/varieties/granny-smith.jpg" }
     ]
   },
   pears: {
@@ -30,6 +30,7 @@ const productData = {
     description: "Fresh and juicy pears from premium orchards with exceptional taste",
     image: "/products/pears/category.jpg",
     heroImage: "/products/pears/hero.jpg",
+    backgroundImage: "/images/backgrounds/pears.jpg",
     bgColor: "bg-gradient-to-br from-green-500 to-green-600",
     accentColor: "text-green-500",
     varieties: [
@@ -37,106 +38,111 @@ const productData = {
       { name: "Fonelle", description: "Delicate flavor with tender flesh", image: "/products/pears/varieties/fonelle.jpg" },
       { name: "Vermont", description: "Rich flavor with excellent storage qualities", image: "/products/pears/varieties/vermont.jpg" },
       { name: "William", description: "Classic pear variety with sweet taste", image: "/products/pears/varieties/william.jpg" },
-      { name: "Red Anjou", description: "Sweet red-skinned pear with smooth texture", image: "/products/pears/varieties/red-anjou.jpg" },
-      { name: "Green Anjou", description: "Versatile pear perfect for fresh eating and cooking", image: "/products/pears/varieties/green-anjou.jpg" }
+      { name: "Red Anjou", description: "Sweet red-skinned pear with smooth texture", image: "/products/pears/varieties/red-anjou.jpg" }
     ]
   },
   citrus: {
     name: "Citrus",
     icon: Citrus,
     description: "Fresh citrus varieties packed with vitamin C and natural goodness",
-    image: "https://images.pexels.com/photos/1414110/pexels-photo-1414110.jpeg",
-    heroImage: "https://images.pexels.com/photos/1414120/pexels-photo-1414120.jpeg",
+    image: "/products/citrus/category.jpg",
+    heroImage: "/products/citrus/hero.jpg",
+    backgroundImage: "/images/backgrounds/cirtus.jpg",
     bgColor: "bg-gradient-to-br from-orange-500 to-orange-600",
     accentColor: "text-orange-500",
     varieties: [
-      { name: "Valencia", description: "Sweet oranges perfect for juicing and fresh eating" },
-      { name: "Navels", description: "Seedless oranges with easy-to-peel skin" },
-      { name: "Mandarins", description: "Small, sweet citrus fruits with loose skin" },
-      { name: "Grapefruits", description: "Tangy and refreshing with beautiful pink flesh" },
-      { name: "Lemon", description: "Versatile citrus perfect for cooking and beverages" }
+      { name: "Valencia", description: "Sweet oranges perfect for juicing and fresh eating", image: "/products/citrus/varieties/valencia.jpg" },
+      { name: "Navels", description: "Seedless oranges with easy-to-peel skin", image: "/products/citrus/varieties/navels.jpg" },
+      { name: "Mandarins", description: "Small, sweet citrus fruits with loose skin", image: "/products/citrus/varieties/mandarins.jpg" },
+      { name: "Grapefruits", description: "Tangy and refreshing with beautiful pink flesh", image: "/products/citrus/varieties/grapefruits.jpg" },
+      { name: "Lemon", description: "Versatile citrus perfect for cooking and beverages", image: "/products/citrus/varieties/lemon.jpg" }
     ]
   },
   kiwi: {
     name: "Kiwi",
     icon: Apple,
     description: "Exotic kiwi fruits with unique flavor and high nutritional value",
-    image: "https://images.pexels.com/photos/102104/pexels-photo-102104.jpeg",
-    heroImage: "https://images.pexels.com/photos/5966630/pexels-photo-5966630.jpeg",
+    image: "/products/kiwi/category.jpg",
+    heroImage: "/products/kiwi/hero.jpg",
+    backgroundImage: "/images/backgrounds/kiwi.jpg",
     bgColor: "bg-gradient-to-br from-emerald-500 to-emerald-600",
     accentColor: "text-emerald-500",
     varieties: [
-      { name: "Hayward", description: "Classic green kiwi with tangy-sweet flavor" },
-      { name: "Golden", description: "Smooth-skinned golden kiwi with tropical sweetness" }
+      { name: "Hayward", description: "Classic green kiwi with tangy-sweet flavor", image: "/products/kiwi/varieties/hayward.jpg" }
     ]
   },
   grapes: {
     name: "Grapes",
     icon: Grape,
     description: "Premium grape varieties from renowned vineyards",
-    image: "https://images.pexels.com/photos/102104/pexels-photo-102104.jpeg",
-    heroImage: "https://images.pexels.com/photos/5945567/pexels-photo-5945567.jpeg",
+    image: "/products/grapes/category.jpg",
+    heroImage: "/products/grapes/hero.jpg",
+    backgroundImage: "/images/backgrounds/grapes.jpg",
     bgColor: "bg-gradient-to-br from-purple-500 to-purple-600",
     accentColor: "text-purple-500",
     varieties: [
-      { name: "Red Globe", description: "Large, sweet red grapes with crisp texture" },
-      { name: "Shine Muscat", description: "Premium Japanese variety with exceptional sweetness" },
-      { name: "Crimson", description: "Seedless red grapes with intense flavor" },
-      { name: "Sapphire Long", description: "Elongated blue grapes with unique appearance" }
+      { name: "Red Globe", description: "Large, sweet red grapes with firm texture", image: "/products/grapes/varieties/red-globe.jpg" },
+      { name: "Thompson Seedless", description: "Sweet green grapes, perfect for snacking", image: "/products/grapes/varieties/thompson-seedless.jpg" },
+      { name: "Flame Seedless", description: "Sweet red grapes with crisp texture", image: "/products/grapes/varieties/flame-seedless.jpg" },
+      { name: "Black Seedless", description: "Sweet black grapes with rich flavor", image: "/products/grapes/varieties/black-seedless.jpg" }
     ]
   },
   avocado: {
     name: "Avocado",
     icon: Apple,
-    description: "Premium Hass avocados with rich, creamy texture",
-    image: "https://images.pexels.com/photos/102104/pexels-photo-102104.jpeg",
-    heroImage: "https://images.pexels.com/photos/5792641/pexels-photo-5792641.jpeg",
+    description: "Premium avocado varieties with rich, creamy texture",
+    image: "/products/avocado/category.jpg",
+    heroImage: "/products/avocado/hero.jpg",
+    backgroundImage: "/images/backgrounds/avocado.jpg",
     bgColor: "bg-gradient-to-br from-lime-500 to-lime-600",
     accentColor: "text-lime-500",
     varieties: [
-      { name: "Hass", description: "Premium variety with rich, creamy texture and nutty flavor" }
+      { name: "Hass", description: "Premium variety with rich, creamy texture and nutty flavor", image: "/products/avocado/varieties/hass.jpg" }
     ]
   },
   dragonFruit: {
     name: "Dragon Fruit",
     icon: Cherry,
     description: "Exotic dragon fruits with vibrant colors and unique taste",
-    image: "https://images.pexels.com/photos/102104/pexels-photo-102104.jpeg",
-    heroImage: "https://images.pexels.com/photos/4750267/pexels-photo-4750267.jpeg",
+    image: "/products/dragon-fruit/category.jpg",
+    heroImage: "/products/dragon-fruit/hero.jpg",
+    backgroundImage: "/images/backgrounds/dragonfruit.jpg",
     bgColor: "bg-gradient-to-br from-pink-500 to-pink-600",
     accentColor: "text-pink-500",
     varieties: [
-      { name: "White Flesh", description: "Classic white-fleshed dragon fruit with mild sweetness" },
-      { name: "Red Flesh", description: "Vibrant red-fleshed variety with intense color and flavor" }
+      { name: "White Flesh", description: "Classic white-fleshed dragon fruit with mild sweetness", image: "/products/dragon-fruit/varieties/white-flesh.jpg" },
+      { name: "Red Flesh", description: "Vibrant red-fleshed variety with intense color and flavor", image: "/products/dragon-fruit/varieties/red-flesh.jpg" }
     ]
   },
   stoneFruit: {
     name: "Stone Fruit",
     icon: Cherry,
     description: "Fresh stone fruits with exceptional flavor and texture",
-    image: "https://images.pexels.com/photos/102104/pexels-photo-102104.jpeg",
-    heroImage: "https://images.pexels.com/photos/4750441/pexels-photo-4750441.jpeg",
+    image: "/products/stone-fruit/category.jpg",
+    heroImage: "/products/stone-fruit/hero.jpg",
+    backgroundImage: "/images/backgrounds/stonefruit.jpg",
     bgColor: "bg-gradient-to-br from-amber-500 to-amber-600",
     accentColor: "text-amber-500",
     varieties: [
-      { name: "Peach", description: "Sweet and juicy peaches with velvety skin" },
-      { name: "Nectarine", description: "Smooth-skinned peaches with crisp texture" },
-      { name: "Apricot", description: "Small, sweet fruits with delicate flavor" },
-      { name: "Plum", description: "Versatile stone fruits available in various colors" }
+      { name: "Peach", description: "Sweet and juicy peaches with velvety skin", image: "/products/stone-fruit/varieties/peach.jpg" },
+      { name: "Nectarine", description: "Smooth-skinned peaches with crisp texture", image: "/products/stone-fruit/varieties/nectarine.jpg" },
+      { name: "Apricot", description: "Small, sweet fruits with delicate flavor", image: "/products/stone-fruit/varieties/apricot.jpg" },
+      { name: "Plum", description: "Versatile stone fruits available in various colors", image: "/products/stone-fruit/varieties/plum.jpg" }
     ]
   },
   berries: {
     name: "Berries",
     icon: Cherry,
     description: "Fresh berries packed with antioxidants and natural sweetness",
-    image: "https://images.pexels.com/photos/102104/pexels-photo-102104.jpeg",
-    heroImage: "https://images.pexels.com/photos/1263068/pexels-photo-1263068.jpeg",
+    image: "/products/berries/category.jpg",
+    heroImage: "/products/berries/hero.jpg",
+    backgroundImage: "/images/backgrounds/berries.jpg",
     bgColor: "bg-gradient-to-br from-indigo-500 to-indigo-600",
     accentColor: "text-indigo-500",
     varieties: [
-      { name: "Blueberry", description: "Sweet blueberries rich in antioxidants" },
-      { name: "Cherry", description: "Sweet and tart cherries perfect for snacking" },
-      { name: "Raspberry", description: "Delicate raspberries with intense flavor" }
+      { name: "Blueberry", description: "Sweet blueberries rich in antioxidants", image: "/products/berries/varieties/blueberry.jpg" },
+      { name: "Cherry", description: "Sweet and tart cherries perfect for snacking", image: "/products/berries/varieties/cherry.jpg" },
+      { name: "Raspberry", description: "Delicate raspberries with intense flavor", image: "/products/berries/varieties/raspberry.jpg" }
     ]
   }
 };
@@ -184,7 +190,7 @@ export default function Products() {
     setSelectedProduct({
       name: productData[selectedCategory as keyof typeof productData].name,
       variety: variety,
-      category: productData[selectedCategory as keyof typeof productData].name,
+      category: selectedCategory, // Use the key (e.g., "apples") instead of the display name
       accentColor: productData[selectedCategory as keyof typeof productData].accentColor,
       bgColor: productData[selectedCategory as keyof typeof productData].bgColor
     });
@@ -193,13 +199,22 @@ export default function Products() {
 
   return (
     <div className="bg-gradient-to-br from-blue-50 via-white to-green-50">
-      {/* Hero Section with Water Effects */}
-      <div className="relative bg-gradient-to-r from-rareimpex-red to-rareimpex-green text-white py-20 overflow-hidden">
-        {/* Water Splash Effects */}
-        <div className="absolute inset-0 opacity-20">
-          <div className="absolute top-10 left-10 w-40 h-40 bg-white/30 rounded-full blur-2xl animate-pulse"></div>
-          <div className="absolute top-40 right-20 w-32 h-32 bg-white/20 rounded-full blur-xl animate-pulse delay-1000"></div>
-          <div className="absolute bottom-20 left-1/4 w-48 h-48 bg-white/25 rounded-full blur-2xl animate-pulse delay-2000"></div>
+      {/* Hero Section with Dynamic Background */}
+      <div 
+        className="relative text-white py-20 overflow-hidden"
+        style={{
+          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(${productData[selectedCategory as keyof typeof productData].backgroundImage})`,
+          backgroundSize: '100% 100%',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat',
+          minHeight: '500px'
+        }}
+      >
+        {/* Overlay Effects */}
+        <div className="absolute inset-0 opacity-30">
+          <div className="absolute top-10 left-10 w-40 h-40 bg-white/20 rounded-full blur-2xl animate-pulse"></div>
+          <div className="absolute top-40 right-20 w-32 h-32 bg-white/15 rounded-full blur-xl animate-pulse delay-1000"></div>
+          <div className="absolute bottom-20 left-1/4 w-48 h-48 bg-white/20 rounded-full blur-2xl animate-pulse delay-2000"></div>
         </div>
         
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">

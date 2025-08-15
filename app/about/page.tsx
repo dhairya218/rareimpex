@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { Users, Globe, Award, Truck } from 'lucide-react';
+import { Users, Globe, Award, Truck, Target, Eye, MapPin, Phone, Mail, Clock, CheckCircle, Shield } from 'lucide-react';
 
 export default function About() {
   const values = [
@@ -40,28 +40,56 @@ export default function About() {
       </div>
 
       {/* Company Story */}
-      <div className="py-16 bg-gray-50">
+      <div className="py-12 bg-gray-50">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center">
+            <h2 className="text-3xl font-bold text-gray-900 mb-6">Our Story</h2>
+            <p className="text-lg text-gray-700 mb-4">
+              Founded in 2001, Rareimpex began as a small family business with a vision to bring the world's finest fruits to global markets. Starting from our headquarters in Mumbai, we've grown into one of the leading fruit import-export companies in Asia.
+            </p>
+            <p className="text-lg text-gray-700">
+              Today, we operate across 7 countries, working directly with farmers and distributors to ensure a seamless supply chain. With state-of-the-art storage facilities and advanced logistics networks, we maintain the highest standards of quality from farm to table.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      {/* Mission & Vision */}
+      <div className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <h2 className="text-3xl font-bold text-gray-900 mb-6">Our Story</h2>
-              <p className="text-lg text-gray-700 mb-6">
-                Founded in 2001, Rareimpex began as a small family business with a vision to bring the world's finest fruits to global markets. Starting from our headquarters in Mumbai, we've grown into one of the leading fruit import-export companies in Asia.
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">Mission & Vision</h2>
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+              Driving the future of global fruit trade with purpose and innovation
+            </p>
+          </div>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            {/* Mission */}
+            <div className="bg-gradient-to-br from-green-50 to-emerald-50 rounded-2xl p-8 border border-green-100">
+              <div className="flex items-center mb-6">
+                <Target className="h-10 w-10 text-green-600 mr-4" />
+                <h3 className="text-2xl font-bold text-gray-900">Our Mission</h3>
+              </div>
+              <p className="text-lg text-gray-700 mb-4">
+                To bridge the gap between premium fruit producers and global markets, ensuring the highest quality standards while promoting sustainable agricultural practices and fair trade principles.
               </p>
-              <p className="text-lg text-gray-700 mb-6">
-                Today, we operate across 7 countries, working directly with farmers and distributors to ensure a seamless supply chain. Our expertise spans premium apples, tropical mangoes, quality bananas, and exotic citrus fruits.
-              </p>
-              <p className="text-lg text-gray-700">
-                With state-of-the-art storage facilities and advanced logistics networks, we maintain the highest standards of quality from farm to table.
+              <p className="text-gray-600">
+                We strive to be the most trusted partner in the international fruit trade, delivering exceptional value to our customers, suppliers, and stakeholders.
               </p>
             </div>
-            <div className="relative h-96 rounded-lg overflow-hidden shadow-lg">
-              <Image
-                src="https://images.pexels.com/photos/1458671/pexels-photo-1458671.jpeg"
-                alt="Fruit warehouse operations"
-                fill
-                className="object-cover"
-              />
+            
+            {/* Vision */}
+            <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl p-8 border border-blue-100">
+              <div className="flex items-center mb-6">
+                <Eye className="h-10 w-10 text-blue-600 mr-4" />
+                <h3 className="text-2xl font-bold text-gray-900">Our Vision</h3>
+              </div>
+              <p className="text-lg text-gray-700 mb-4">
+                To become the global leader in premium fruit distribution, setting industry standards for quality, sustainability, and innovation in agricultural trade.
+              </p>
+              <p className="text-gray-600">
+                We envision a world where the finest fruits from every corner of the globe are accessible to consumers worldwide, while supporting local farming communities and environmental conservation.
+              </p>
             </div>
           </div>
         </div>
@@ -84,6 +112,88 @@ export default function About() {
                 <p className="text-gray-600">{value.description}</p>
               </div>
             ))}
+          </div>
+        </div>
+      </div>
+
+      {/* Certifications */}
+      <div className="py-16 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">Certifications & Standards</h2>
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+              Our commitment to quality is backed by international certifications and industry standards
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-100">
+              <div className="flex items-center justify-center mb-6">
+                <CheckCircle className="h-16 w-16 text-green-600" />
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-4 text-center">ISO 22000:2018</h3>
+              <p className="text-gray-600 text-center mb-4">
+                Food Safety Management System certification ensuring the highest standards of food safety across our operations.
+              </p>
+              <div className="text-center">
+                <span className="inline-block bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">
+                  Certified
+                </span>
+              </div>
+            </div>
+            
+            <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-100">
+              <div className="flex items-center justify-center mb-6">
+                <Shield className="h-16 w-16 text-blue-600" />
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-4 text-center">HACCP Certified</h3>
+              <p className="text-gray-600 text-center mb-4">
+                Hazard Analysis and Critical Control Points certification for comprehensive food safety management.
+              </p>
+              <div className="text-center">
+                <span className="inline-block bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium">
+                  Certified
+                </span>
+              </div>
+            </div>
+            
+            <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-100">
+              <div className="flex items-center justify-center mb-6">
+                <Award className="h-16 w-16 text-orange-600" />
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-4 text-center">Global G.A.P.</h3>
+              <p className="text-gray-600 text-center mb-4">
+                Good Agricultural Practice certification ensuring sustainable and responsible farming practices.
+              </p>
+              <div className="text-center">
+                <span className="inline-block bg-orange-100 text-orange-800 px-3 py-1 rounded-full text-sm font-medium">
+                  Certified
+                </span>
+              </div>
+            </div>
+          </div>
+          
+          <div className="mt-12 text-center">
+            <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-100 inline-block">
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">Additional Standards</h3>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-left">
+                <div className="flex items-center">
+                  <CheckCircle className="h-5 w-5 text-green-600 mr-3" />
+                  <span className="text-gray-700">Organic Certification (USDA, EU)</span>
+                </div>
+                <div className="flex items-center">
+                  <CheckCircle className="h-5 w-5 text-green-600 mr-3" />
+                  <span className="text-gray-700">Fair Trade Certified</span>
+                </div>
+                <div className="flex items-center">
+                  <CheckCircle className="h-5 w-5 text-green-600 mr-3" />
+                  <span className="text-gray-700">Kosher Certification</span>
+                </div>
+                <div className="flex items-center">
+                  <CheckCircle className="h-5 w-5 text-green-600 mr-3" />
+                  <span className="text-gray-700">Halal Certification</span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -162,6 +272,8 @@ export default function About() {
           </div>
         </div>
       </div>
+
+
     </div>
   );
 }

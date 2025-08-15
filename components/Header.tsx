@@ -53,7 +53,7 @@ export default function Header() {
               />
             </div>
             <div>
-              <span className="text-2xl font-bold text-rareimpex-red">Rareimpex</span>
+              <span className="text-2xl font-bold text-rareimpex-red">𝗥𝗔Я𝗘𝗶𝗺𝗽𝗲𝘅</span>
               <p className="text-sm text-gray-600 -mt-1">Premium Fruits Worldwide</p>
             </div>
           </Link>
