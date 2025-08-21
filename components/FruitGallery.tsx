@@ -153,7 +153,7 @@ export default function FruitGallery() {
                     <p className="text-white/90 mb-6 leading-relaxed">{category.description}</p>
                     
                     <div className="flex items-center justify-between">
-                      <a href={`/products/${category.name.toLowerCase().replace(/\s+/g, '')}`} className="bg-white/20 backdrop-blur-sm px-6 py-3 rounded-full text-sm font-semibold hover:bg-white/30 transition-all duration-300">
+                      <a href={`/products#${category.name.toLowerCase().replace(/\s+/g, '')}`} className="bg-white/20 backdrop-blur-sm px-6 py-3 rounded-full text-sm font-semibold hover:bg-white/30 transition-all duration-300">
                         Explore
                       </a>
                       <div className="text-right">

@@ -74,31 +74,31 @@ export default function Footer() {
             <h3 className="text-lg font-semibold mb-6">Our Products</h3>
             <ul className="space-y-3">
               <li>
-                <Link href="/products/apples" className="text-gray-400 hover:text-rareimpex-red transition-colors duration-300">Apples</Link>
+                <Link href="/products#apples" className="text-gray-400 hover:text-rareimpex-red transition-colors duration-300">Apples</Link>
               </li>
               <li>
-                <Link href="/products/pears" className="text-gray-400 hover:text-rareimpex-red transition-colors duration-300">Pears</Link>
+                <Link href="/products#pears" className="text-gray-400 hover:text-rareimpex-red transition-colors duration-300">Pears</Link>
               </li>
               <li>
-                <Link href="/products/citrus" className="text-gray-400 hover:text-rareimpex-red transition-colors duration-300">Citrus</Link>
+                <Link href="/products#citrus" className="text-gray-400 hover:text-rareimpex-red transition-colors duration-300">Citrus</Link>
               </li>
               <li>
-                <Link href="/products/kiwi" className="text-gray-400 hover:text-rareimpex-red transition-colors duration-300">Kiwi</Link>
+                <Link href="/products#kiwi" className="text-gray-400 hover:text-rareimpex-red transition-colors duration-300">Kiwi</Link>
               </li>
               <li>
-                <Link href="/products/grapes" className="text-gray-400 hover:text-rareimpex-red transition-colors duration-300">Grapes</Link>
+                <Link href="/products#grapes" className="text-gray-400 hover:text-rareimpex-red transition-colors duration-300">Grapes</Link>
               </li>
               <li>
-                <Link href="/products/avocado" className="text-gray-400 hover:text-rareimpex-red transition-colors duration-300">Avocado</Link>
+                <Link href="/products#avocado" className="text-gray-400 hover:text-rareimpex-red transition-colors duration-300">Avocado</Link>
               </li>
               <li>
-                <Link href="/products/dragonfruit" className="text-gray-400 hover:text-rareimpex-red transition-colors duration-300">Dragon Fruit</Link>
+                <Link href="/products#dragonfruit" className="text-gray-400 hover:text-rareimpex-red transition-colors duration-300">Dragon Fruit</Link>
               </li>
               <li>
-                <Link href="/products/stonefruit" className="text-gray-400 hover:text-rareimpex-red transition-colors duration-300">Stone Fruit</Link>
+                <Link href="/products#stonefruit" className="text-gray-400 hover:text-rareimpex-red transition-colors duration-300">Stone Fruit</Link>
               </li>
               <li>
-                <Link href="/products/berries" className="text-gray-400 hover:text-rareimpex-red transition-colors duration-300">Berries</Link>
+                <Link href="/products#berries" className="text-gray-400 hover:text-rareimpex-red transition-colors duration-300">Berries</Link>
               </li>
             </ul>
           </div>
