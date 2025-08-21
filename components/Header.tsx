@@ -25,8 +25,8 @@ export default function Header() {
         { name: 'Kiwi', href: '/products#kiwi' },
         { name: 'Grapes', href: '/products#grapes' },
         { name: 'Avocado', href: '/products#avocado' },
-        { name: 'Dragon Fruit', href: '/products#dragon-fruit' },
-        { name: 'Stone Fruit', href: '/products#stone-fruit' },
+        { name: 'Dragon Fruit', href: '/products#dragonfruit' },
+        { name: 'Stone Fruit', href: '/products#stonefruit' },
         { name: 'Berries', href: '/products#berries' },
       ]
     },
@@ -69,6 +69,7 @@ export default function Header() {
                     onMouseLeave={() => setIsProductsOpen(false)}
                   >
                     <button
+                      onClick={() => setIsProductsOpen((prev) => !prev)}
                       className={`flex items-center text-lg font-medium transition-colors duration-300 relative ${
                         isActive(item.href)
                           ? 'text-rareimpex-red'
@@ -90,6 +91,7 @@ export default function Header() {
                             key={dropdownItem.name}
                             href={dropdownItem.href}
                             className="block px-4 py-2 text-gray-700 hover:bg-rareimpex-red hover:text-white transition-colors duration-200"
+                            onClick={() => setIsProductsOpen(false)}
                           >
                             {dropdownItem.name}
                           </Link>

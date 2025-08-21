@@ -74,31 +74,31 @@ export default function Footer() {
             <h3 className="text-lg font-semibold mb-6">Our Products</h3>
             <ul className="space-y-3">
               <li>
-                <span className="text-gray-400">Apples</span>
+                <Link href="/products#apples" className="text-gray-400 hover:text-rareimpex-red transition-colors duration-300">Apples</Link>
               </li>
               <li>
-                <span className="text-gray-400">Pears</span>
+                <Link href="/products#pears" className="text-gray-400 hover:text-rareimpex-red transition-colors duration-300">Pears</Link>
               </li>
               <li>
-                <span className="text-gray-400">Citrus</span>
+                <Link href="/products#citrus" className="text-gray-400 hover:text-rareimpex-red transition-colors duration-300">Citrus</Link>
               </li>
               <li>
-                <span className="text-gray-400">Kiwi</span>
+                <Link href="/products#kiwi" className="text-gray-400 hover:text-rareimpex-red transition-colors duration-300">Kiwi</Link>
               </li>
               <li>
-                <span className="text-gray-400">Grapes</span>
+                <Link href="/products#grapes" className="text-gray-400 hover:text-rareimpex-red transition-colors duration-300">Grapes</Link>
               </li>
               <li>
-                <span className="text-gray-400">Avocado</span>
+                <Link href="/products#avocado" className="text-gray-400 hover:text-rareimpex-red transition-colors duration-300">Avocado</Link>
               </li>
               <li>
-                <span className="text-gray-400">Dragon Fruit</span>
+                <Link href="/products#dragonfruit" className="text-gray-400 hover:text-rareimpex-red transition-colors duration-300">Dragon Fruit</Link>
               </li>
               <li>
-                <span className="text-gray-400">Stone Fruit</span>
+                <Link href="/products#stonefruit" className="text-gray-400 hover:text-rareimpex-red transition-colors duration-300">Stone Fruit</Link>
               </li>
               <li>
-                <span className="text-gray-400">Berries</span>
+                <Link href="/products#berries" className="text-gray-400 hover:text-rareimpex-red transition-colors duration-300">Berries</Link>
               </li>
             </ul>
           </div>
@@ -110,17 +110,17 @@ export default function Footer() {
               <div className="flex items-start">
                 <MapPin className="h-5 w-5 text-rareimpex-green mr-3 mt-0.5 flex-shrink-0" />
                 <span className="text-gray-400 text-sm">
-                  Bandra Kurla Complex<br />
-                  Mumbai, Maharashtra
+                  APMC Yard, Sector 18, Vashi, Navi Mumbai,<br />
+                  Maharashtra 400703
                 </span>
               </div>
               <div className="flex items-center">
                 <Phone className="h-5 w-5 text-rareimpex-green mr-3 flex-shrink-0" />
-                <span className="text-gray-400 text-sm">+91 22 6789 1234</span>
+                <a href="tel:+971551623344" className="text-gray-400 text-sm hover:text-rareimpex-red">+971 55 162 3344</a>
               </div>
               <div className="flex items-center">
                 <MessageCircle className="h-5 w-5 text-rareimpex-green mr-3 flex-shrink-0" />
-                <span className="text-gray-400 text-sm">+91 98765 43210</span>
+                <a href="https://wa.me/919876543210" target="_blank" rel="noopener noreferrer" className="text-gray-400 text-sm hover:text-rareimpex-red">+91 98765 43210</a>
               </div>
               <div className="flex items-center">
                 <Mail className="h-5 w-5 text-rareimpex-green mr-3 flex-shrink-0" />

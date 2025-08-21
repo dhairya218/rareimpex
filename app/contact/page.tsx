@@ -95,7 +95,7 @@ export default function Contact() {
                       value={formData.phone}
                       onChange={handleChange}
                       className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors duration-200"
-                      placeholder="+91 98765 43210"
+                      placeholder="+971 55 162 3344"
                     />
                   </div>
                   <div>
@@ -152,9 +152,8 @@ export default function Contact() {
                       <h3 className="text-lg font-semibold text-gray-900 mb-1">Head Office</h3>
                       <p className="text-gray-600 leading-relaxed">
                         Rareimpex Import Export Pvt. Ltd.<br />
-                        15th Floor, Trade Center Building<br />
-                        Bandra Kurla Complex, Bandra East<br />
-                        Mumbai, Maharashtra 400051<br />
+                        APMC Yard, Sector 18, Vashi<br />
+                        Navi Mumbai, Maharashtra 400703<br />
                         India
                       </p>
                     </div>
@@ -164,7 +163,7 @@ export default function Contact() {
                     <Phone className="h-6 w-6 text-green-600 mr-4 flex-shrink-0" />
                     <div>
                       <h3 className="text-lg font-semibold text-gray-900 mb-1">Phone</h3>
-                      <p className="text-gray-600">+91 22 6789 1234</p>
+                      <p className="text-gray-600"><a href="tel:+971551623344" className="hover:text-blue-600">+971 55 162 3344</a></p>
                     </div>
                   </div>
 
@@ -172,7 +171,7 @@ export default function Contact() {
                     <MessageCircle className="h-6 w-6 text-green-600 mr-4 flex-shrink-0" />
                     <div>
                       <h3 className="text-lg font-semibold text-gray-900 mb-1">WhatsApp</h3>
-                      <p className="text-gray-600">+91 98765 43210</p>
+                      <p className="text-gray-600"><a href="https://wa.me/919876543210" target="_blank" rel="noopener noreferrer" className="hover:text-green-600">+91 98765 43210</a></p>
                     </div>
                   </div>
 
@@ -206,7 +205,7 @@ export default function Contact() {
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4">
                   <a
-                    href="tel:+912267891234"
+                    href="tel:+971551623344"
                     className="flex items-center justify-center px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors duration-300"
                   >
                     <Phone className="h-4 w-4 mr-2" />
@@ -243,11 +242,11 @@ export default function Contact() {
                 <MapPin className="h-16 w-16 text-blue-600 mx-auto mb-4" />
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">Rareimpex Head Office</h3>
                 <p className="text-gray-600 max-w-md">
-                  Bandra Kurla Complex, Mumbai<br />
+                  APMC Yard, Sector 18, Vashi, Navi Mumbai, Maharashtra 400703<br />
                   Click to view on Google Maps
                 </p>
                 <a
-                  href="https://maps.google.com/?q=Bandra+Kurla+Complex+Mumbai"
+                  href="https://maps.google.com/?q=APMC+Yard,+Sector+18,+Vashi,+Navi+Mumbai,+Maharashtra+400703"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-block mt-4 px-6 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors duration-300"

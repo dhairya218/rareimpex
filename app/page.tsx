@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <div className="relative">
       {/* Background Pattern */}
-      <div className="fixed inset-0 bg-gradient-to-br from-green-50 via-white to-blue-50 opacity-30"></div>
+      <div className="fixed inset-0 -z-10 pointer-events-none bg-gradient-to-br from-green-50 via-white to-blue-50 opacity-30"></div>
       
       {/* Main Content */}
       <div className="relative z-10">

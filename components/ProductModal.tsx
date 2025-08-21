@@ -291,7 +291,7 @@ export default function ProductModal({ isOpen, onClose, product }: ProductModalP
       onClick={handleBackdropClick}
     >
       {/* Backdrop */}
-      <div className="absolute inset-0 bg-black/60 backdrop-blur-sm" />
+      <div className="absolute inset-0 bg-black/60 backdrop-blur-sm" onClick={handleClose} />
       
       {/* Modal */}
       <div className={`relative w-full max-w-[98vw] sm:max-w-[95vw] md:max-w-4xl lg:max-w-5xl max-h-[98vh] sm:max-h-[95vh] lg:max-h-[85vh] overflow-hidden bg-white rounded-xl sm:rounded-2xl lg:rounded-3xl shadow-2xl transition-transform duration-300 flex flex-col ${
@@ -312,7 +312,7 @@ export default function ProductModal({ isOpen, onClose, product }: ProductModalP
               <img
                 src={currentImagePath}
                 alt={product.variety.name}
-                className="w-full h-full object-cover"
+                className="w-full h-full object-contain lg:object-cover object-center"
                 style={{
                   minWidth: '100%',
                   minHeight: '100%',

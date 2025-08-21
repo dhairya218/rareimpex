@@ -155,6 +155,8 @@ export default function Products() {
 
   // Function to map category names to productData keys
   const getCategoryKey = (categoryName: string) => {
+    // Normalize: lowercase, remove spaces and hyphens
+    const normalized = categoryName.toLowerCase().replace(/\s+/g, '').replace(/-/g, '');
     const categoryMap: { [key: string]: string } = {
       'apples': 'apples',
       'pears': 'pears',
@@ -166,7 +168,7 @@ export default function Products() {
       'stonefruit': 'stoneFruit',
       'berries': 'berries'
     };
-    return categoryMap[categoryName.toLowerCase()] || 'apples';
+    return categoryMap[normalized] || 'apples';
   };
 
   useEffect(() => {

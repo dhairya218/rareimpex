@@ -44,12 +44,29 @@ export default function About() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h2 className="text-3xl font-bold text-gray-900 mb-6">Our Story</h2>
-            <p className="text-lg text-gray-700 mb-4">
-              Founded in 2001, Rareimpex began as a small family business with a vision to bring the world's finest fruits to global markets. Starting from our headquarters in Mumbai, we've grown into one of the leading fruit import-export companies in Asia.
-            </p>
-            <p className="text-lg text-gray-700">
-              Today, we operate across 7 countries, working directly with farmers and distributors to ensure a seamless supply chain. With state-of-the-art storage facilities and advanced logistics networks, we maintain the highest standards of quality from farm to table.
-            </p>
+            <div className="text-lg text-gray-700 space-y-4 text-left md:text-center">
+              <p>
+                Welcome to Rare Impex, a distinguished initiative of imported fresh fruits to Indian market.
+              </p>
+              <p>
+                At Rare Impex, we envision a world where businesses and communities come together to cherish and promote nature's finest fruits. We pride ourselves on delivering the finest quality fruits.
+              </p>
+              <p>
+                Our journey reflects a legacy of excellence and adaptation, embracing both challenges and opportunities to meet the evolving demands of our clientele. Our journey reflects a legacy of excellence and adaptation, embracing both challenges and opportunities to meet the evolving demands of our global clientele.
+              </p>
+              <p>
+                We remain committed to delivering exceptional quality and service, sustaining the trust and satisfaction of our customers. Rare Impex is committed to sustainable growth and responsible farming.
+              </p>
+              <p>
+                We work closely with our farmers, providing guidance on sustainable agronomy practices that are safe for consumers and the environment. Our engagement extends to ensuring fair pricing, prompt payments, and the sharing of best practices, affirming our commitment to the communities we work with.
+              </p>
+              <p>
+                We maintain the same high standards for our domestic markets as we do for our demanding imported fruits markets, ensuring consistency and fairness in all our businesses practices.
+              </p>
+              <p>
+                We import fruits from countries like South Africa, New Zealand, Egypt, Turkey, USA, Vietnam, Greece, Australia etc. We had a great distribution channel and network which helps us to distribute imported fruits quickly and efficiently in all of India.
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -58,10 +75,7 @@ export default function About() {
       <div className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Vision & Mission</h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Driving the future of global fruit trade with purpose and innovation
-            </p>
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">Our Vision & Mission</h2>
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Vision */}
@@ -71,13 +85,7 @@ export default function About() {
                 <h3 className="text-2xl font-bold text-gray-900">Vision</h3>
               </div>
               <p className="text-lg text-gray-700 mb-4">
-                To be the most trusted and recognized global leader in the fresh fruit trade, celebrated for our unwavering commitment to quality, integrity, and customer delight.
-              </p>
-              <p className="text-gray-700 mb-4">
-                We strive to bridge the gap between the world's finest growers and Indian consumers, delivering premium imported fruits that blend exceptional taste, unmatched freshness, and fair pricing.
-              </p>
-              <p className="text-gray-600">
-                Our vision is to set new benchmarks in the industry by promoting healthy lifestyles, fostering sustainable trade practices, and ensuring that every fruit tells a story of excellence.
+                To be a global leader in the fresh fruit trade, known for our commitment to quality, integrity, and customer satisfaction. Our goal is to connect the world's best growers with Indian consumers, offering them superior imported fruits at competitive prices.
               </p>
             </div>
             
@@ -87,33 +95,10 @@ export default function About() {
                 <Target className="h-10 w-10 text-green-600 mr-4" />
                 <h3 className="text-2xl font-bold text-gray-900">Mission</h3>
               </div>
-              <p className="text-lg text-gray-700 mb-6">
-                Our mission is to redefine the fruit import industry through innovation, efficiency, and sustainability — making premium global produce accessible to every corner of India.
-              </p>
               <div className="space-y-3">
-                <p className="text-gray-700 font-semibold">We are committed to:</p>
-                <ul className="space-y-2 text-gray-600">
-                  <li className="flex items-start">
-                    <span className="text-green-600 mr-2">•</span>
-                    Building enduring partnerships with leading international growers and suppliers to ensure a year-round supply of world-class fruits.
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-green-600 mr-2">•</span>
-                    Delivering uncompromising freshness through advanced logistics, cold chain management, and stringent quality control.
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-green-600 mr-2">•</span>
-                    Offering competitive pricing without compromising on product standards, ensuring value for both customers and partners.
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-green-600 mr-2">•</span>
-                    Promoting sustainability by supporting eco-friendly sourcing, packaging, and transportation methods.
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-green-600 mr-2">•</span>
-                    Enriching consumer experience with seamless service, transparent operations, and a passion for excellence in every shipment.
-                  </li>
-                </ul>
+                <p className="text-lg text-gray-700 mb-2">To revolutionize the fruit import industry by integrating innovation, efficiency, and sustainability into every aspect of our business.</p>
+                <p className="text-gray-700">To establish strong, reliable partnerships with international growers and suppliers, ensuring a consistent supply of premium-quality fruits to the Indian market.</p>
+                <p className="text-gray-700">To provide an exceptional experience to our customers through seamless logistics, competitive pricing, and unparalleled product freshness.</p>
               </div>
             </div>
           </div>
