@@ -148,6 +148,21 @@ const productData = {
   }
 };
 
+// Generate static params for all product categories
+export async function generateStaticParams() {
+  return [
+    { category: 'apples' },
+    { category: 'pears' },
+    { category: 'citrus' },
+    { category: 'kiwi' },
+    { category: 'grapes' },
+    { category: 'avocado' },
+    { category: 'dragonfruit' },
+    { category: 'stonefruit' },
+    { category: 'berries' }
+  ];
+}
+
 export default function ProductCategory() {
   const params = useParams();
   const category = params.category as string;
